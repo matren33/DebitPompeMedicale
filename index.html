@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion pompe medicale</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion du débit en ml/h</h1>
+    </header>
+    <main>
+        <div id="debit-display-container">
+            <span>Débit en ml/h</span>
+            <div id="debit-display">0</div>
+        </div>
+        <div id="adding-debit-container">
+            <div id="centaine" class="adding-container">
+                <button class="adding-button" onclick="add(100)">+</button>
+                <button class="adding-button" onclick="add(-100)">-</button>
+                <span>Centaine</span>
+            </div>
+            <div id="dizaine" class="adding-container">
+                <button class="adding-button" onclick="add(10)">+</button>
+                <button class="adding-button" onclick="add(-10)">-</button>
+                <span>Dizaine</span>
+            </div>
+            <div id="unite" class="adding-container">
+                <button class="adding-button" onclick="add(1)">+</button>
+                <button class="adding-button" onclick="add(-1)">-</button>
+                <span>Unité</span>
+            </div>
+        </div>
+    </main>
+    <script src="js/calc.js"></script>
+</body>
+</html>
